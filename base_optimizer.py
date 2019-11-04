@@ -29,10 +29,11 @@ class BaseOptimizer:
 
         print(context, target)
         if not self.minimize:
-            if target <= 0:
-                target = 999
-            else:
-                target = 1/target
+            # if target <= 0:
+            #     target = 999
+            # else:
+            #     target = 1/target
+            target = -1*target
 
         return target
 

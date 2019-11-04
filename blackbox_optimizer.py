@@ -10,7 +10,7 @@ class BlackBoxOptimizer(BaseOptimizer):
         domain = []
         for key in limits.keys():
             self.fields.append(key)
-            domain.append(limits[key])
+            domain.append([limits[key]["low"], limits[key]["high"]])
 
         bb.search_min(
             f=self.box,  # given function
