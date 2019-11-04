@@ -1,0 +1,6 @@
+/venv/
+*.log
+*.xml
+/.idea/
+*.csv
+*.complete
